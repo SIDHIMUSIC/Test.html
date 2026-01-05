@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Harry | Official Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ========== ANIMATIONS ========== */
+@keyframes neonGlow {
+  0% { box-shadow: 0 0 12px #22d3ee; }
+  50% { box-shadow: 0 0 30px #6366f1, 0 0 60px #22d3ee; }
+  100% { box-shadow: 0 0 12px #22d3ee; }
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes starsMove {
+  from { background-position: 0 0; }
+  to { background-position: 0 1000px; }
+}
+
+/* ========== BODY + STARS BACKGROUND ========== */
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Segoe UI,sans-serif;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(99,102,241,.35), transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(34,211,238,.35), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(168,85,247,.35), transparent 45%),
+    #020617;
+  overflow:hidden;
+}
+
+/* STARS LAYER */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 40% 70%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 60%, #fff, transparent),
+    radial-gradient(2px 2px at 50% 50%, #fff, transparent);
+  background-size:300px 300px;
+  animation:starsMove 60s linear infinite;
+  opacity:.35;
+  pointer-events:none;
+}
+
+/* ========== CARD ========== */
+.card{
+  width:92%;
+  max-width:420px;
+  background:rgba(2,6,23,0.88);
+  border-radius:26px;
+  padding:32px;
+  text-align:center;
+  animation:neonGlow 3.5s infinite;
+  position:relative;
+  z-index:1;
+}
+
+/* ========== PROFILE ========== */
+.profile{
+  animation:float 3s ease-in-out infinite;
+}
+.profile img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:3px solid #22d3ee;
+  object-fit:cover;
+}
+
+/* ========== NAME GLOW ========== */
+h1{
+  margin:14px 0 6px;
+  font-size:20px;
+  text-shadow:
+    0 0 6px rgba(34,211,238,.6),
+    0 0 14px rgba(99,102,241,.5),
+    0 0 22px rgba(168,85,247,.4);
+}
+.tagline{
+  color:#a5b4fc;
+  font-size:14px;
+  margin-bottom:22px;
+}
+
+/* ========== BUTTONS ========== */
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin:14px 0;
+  padding:15px;
+  border-radius:18px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  background:linear-gradient(135deg,#1e293b,#020617);
+  border:1px solid #334155;
+  transition:.25s;
+}
+.btn:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 22px currentColor;
+}
+
+/* ICON GLOW */
+.icon{
+  width:22px;
+  height:22px;
+  fill:currentColor;
+  filter:drop-shadow(0 0 5px currentColor);
+}
+.instagram{color:#f472b6;}
+.telegram{color:#38bdf8;}
+.github{color:#e5e7eb;}
+
+/* ========== COUNTER + FOOTER ========== */
+.counter{margin-top:18px;color:#22d3ee;font-size:14px;}
+footer{margin-top:18px;font-size:12px;color:#94a3b8;}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="profile">
+    <img src="profile.jpg" alt="Harry">
+  </div>
+
+  <h1>𓆩◕🅷︎𝐀𝐑𝐑𝐘◕𓆪 =‌𐏓 𝄗⃝🇮🇳</h1>
+  <div class="tagline">Student • Creator • Developer</div>
+
+  <!-- INSTAGRAM -->
+  <a class="btn instagram" href="https://www.instagram.com/harryashu_/" target="_blank">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
+    </svg>
+    Instagram
+  </a>
+  
+<!-- TELEGRAM -->
+  <a class="btn telegram" href="https://t.me/SANATANI_BACHA" target="_blank">
+    <svg class="icon" viewBox="0 0 496 512">
+      <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8Z"/>
+    </svg> Telegram
+  </a>
+
+  <!-- GITHUB -->
+  <a class="btn github" href="https://github.com/SIDHIMUSIC" target="_blank">
+    <svg class="icon" viewBox="0 0 496 512">
+      <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8Z"/>
+    </svg> GitHub
+  </a>
+
+  <div class="counter">🌍 Visitors: <span id="count">0</span></div>
+  <footer>⚡ Powered by Harry • Neon Mode</footer>
+</div>
+
+<script>
+fetch("https://api.countapi.xyz/create?namespace=harry-links&key=visits&value=1")
+.then(()=>fetch("https://api.countapi.xyz/hit/harry-links/visits"))
+.then(res=>res.json())
+.then(d=>document.getElementById("count").innerText=d.value);
+</script>
+
+</body>
+</html>
