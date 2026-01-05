@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Harry | Official Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ========== ANIMATIONS ========== */
+@keyframes neonGlow{
+  0%{box-shadow:0 0 12px #22d3ee}
+  50%{box-shadow:0 0 30px #6366f1,0 0 60px #22d3ee}
+  100%{box-shadow:0 0 12px #22d3ee}
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+@keyframes starsMove{
+  from{background-position:0 0}
+  to{background-position:0 1000px}
+}
+
+/* ========== BACKGROUND + STARS ========== */
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Segoe UI,sans-serif;
+  background:#020617;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%,#fff,transparent),
+    radial-gradient(1px 1px at 40% 70%,#fff,transparent),
+    radial-gradient(1px 1px at 60% 40%,#fff,transparent),
+    radial-gradient(2px 2px at 80% 60%,#fff,transparent);
+  background-size:300px 300px;
+  animation:starsMove 60s linear infinite;
+  opacity:.35;
+}
+
+/* ========== CARD ========== */
+.card{
+  width:92%;
+  max-width:420px;
+  background:rgba(2,6,23,.88);
+  border-radius:26px;
+  padding:32px;
+  text-align:center;
+  animation:neonGlow 3.5s infinite;
+  position:relative;
+  z-index:1;
+}
+
+/* ========== PROFILE ========== */
+.profile{animation:float 3s ease-in-out infinite}
+.profile img{
+  width:120px;height:120px;
+  border-radius:50%;
+  border:3px solid #22d3ee;
+  object-fit:cover;
+}
+
+/* ========== NAME GLOW ========== */
+h1{
+  margin:14px 0 6px;
+  font-size:20px;
+  text-shadow:
+    0 0 6px rgba(34,211,238,.6),
+    0 0 14px rgba(99,102,241,.5),
+    0 0 22px rgba(168,85,247,.4);
+}
+.tagline{color:#a5b4fc;font-size:14px;margin-bottom:22px}
+
+/* ========== BUTTONS ========== */
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin:14px 0;
+  padding:15px;
+  border-radius:18px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:600;
+  background:linear-gradient(135deg,#1e293b,#020617);
+  border:1px solid #334155;
+  transition:.25s;
+}
+.btn:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 22px currentColor;
+}
+
+/* ICON GLOW */
+.icon{
+  width:22px;
+  height:22px;
+  fill:currentColor;
+  filter:drop-shadow(0 0 5px currentColor);
+}
+
+.ɪɴsᴛᴀɢʀᴀᴍ{color:#f472b6}
+.ᴛᴇʟᴇɢʀᴀᴍ{color:#38bdf8}
+.ɢɪᴛʜᴜʙ{color:#e5e7eb}
+
+/* ========== FREE FIRE BUTTON ========== */
+.freefire{
+  color:#facc15;
+  background:linear-gradient(135deg,#78350f,#1f1300);
+}
+
+/* ========== POPUP ========== */
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:10;
+}
+.popup-box{
+  width:90%;
+  max-width:360px;
+  background:#0b1220;
+  border-radius:20px;
+  padding:20px;
+  border:2px solid #facc15;
+  box-shadow:0 0 30px #facc15;
+  text-align:center;
+}
+.popup-box img{
+  width:100%;
+  border-radius:14px;
+  margin-top:12px;
+}
+.close{
+  margin-top:14px;
+  padding:10px;
+  border:none;
+  width:100%;
+  border-radius:12px;
+  background:#facc15;
+  color:#000;
+  font-weight:700;
+}
+
+/* ========== COUNTER ========== */
+.counter{margin-top:18px;color:#22d3ee;font-size:14px}
+footer{margin-top:18px;font-size:12px;color:#94a3b8}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="profile">
+    <img src="profile.jpg" alt="Harry">
+  </div>
+
+  <h1>𓆩◕🅷︎𝐀𝐑𝐑𝐘◕𓆪 =‌𐏓 𝄗⃝🇮🇳</h1>
+  <div class="tagline">sᴛᴜᴅᴇɴᴛ • ᴄᴏᴅᴇʀ • ɢᴀᴍᴇʀ</div>
+
+  <!-- INSTAGRAM -->
+  <a class="btn ɪɴsᴛᴀɢʀᴀᴍ" href="https://www.instagram.com/harryashu_/" target="_blank">
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
+    </svg>
+    ɪ ɴ ꜱ ᴛ ᴀ ɢ ʀ ᴀ ᴍ
+  </a>
+
+    <!-- ᴛ ᴇ ʟ ᴇ ɢ ʀ ᴀ ᴍ (OFFICIAL LOGO) -->
+  <a class="btn ᴛᴇʟᴇɢʀᴀᴍ" href="https://t.me/SANATANI_BACHA" target="_blank">
+    <svg class="icon" viewBox="0 0 496 512">
+      <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8Zm121.8 169.9-40.7 192.2c-3.1 13.8-11.3 17.2-22.9 10.7l-63.3-46.7-30.5 29.3c-3.4 3.4-6.3 6.3-12.9 6.3l4.6-65.2 118.7-107.2c5.2-4.6-1.1-7.2-8.1-2.6L169.4 285.6l-62.4-19.5c-13.6-4.3-13.8-13.6 2.9-20.1l244.3-94.2c11.3-4.1 21.2 2.7 17.6 20.1Z"/>
+    </svg>
+    ᴛ ᴇ ʟ ᴇ ɢ ʀ ᴀ ᴍ
+  </a>
+
+
+  <!-- GITHUB (OFFICIAL LOGO) -->
+  <a class="btn ɢɪᴛʜᴜʙ" href="https://github.com/SIDHIMUSIC" target="_blank">
+    <svg class="icon" viewBox="0 0 496 512">
+      <path d="M248 8C111 8 0 119 0 256c0 110.9 69.8 204.4 166.8 237.7 12.2 2.3 16.6-5.2 16.6-11.6 0-5.6-.3-24.3-.3-44.1-67.8 14.6-82.1-32.7-82.1-32.7-11.1-28.3-27.1-35.8-27.1-35.8-22.1-15.1 1.6-14.8 1.6-14.8 24.3 1.6 37.1 24.9 37.1 24.9 21.6 37.1 56.8 26.4 70.8 20.1 2.3-15.8 8.5-26.4 15.5-32.4-54.1-6.1-111-27.1-111-120.5 0-26.4 9.4-48.1 24.9-65.1-2.6-6.1-11.1-30.5 2.3-63.5 0 0 20.1-6.4 65.8 24.9 19-5.2 39.4-7.8 59.6-7.8s40.6 2.6 59.6 7.8c45.7-31.3 65.8-24.9 65.8-24.9 13.4 33 4.9 57.4 2.3 63.5 15.5 17 24.9 38.7 24.9 65.1 0 93.7-56.8 114.4-111 120.5 8.8 7.5 16.6 22.1 16.6 44.6 0 32.4-.3 58.5-.3 66.5 0 6.4 4.3 14.2 16.9 11.6C426.2 460.4 496 366.9 496 256 496 119 385 8 248 8Z"/>
+    </svg>
+    ɢ ɪ ᴛ ʜ ᴜ ʙ
+  </a>
+
+  <!-- FREE FIRE BUTTON WITH ORIGINAL LOGO -->
+<div class="btn freefire" onclick="openFF()" style="color:#ef4444">
+  <!-- GARÉNA LOGO -->
+  <svg class="icon" viewBox="0 0 384 512">
+    <path fill="currentColor"
+      d="M224 32C100.3 32 0 125.1 0 240c0 92.8 66.2 171.3 157.2 197.7 12.5 2.3 17.1-5.4 17.1-12v-42.1c-63.9 13.9-77.4-30.8-77.4-30.8-10.5-26.6-25.7-33.7-25.7-33.7-21-14.3 1.6-14 1.6-14 23.3 1.6 35.6 23.9 35.6 23.9 20.7 35.4 54.3 25.2 67.6 19.3 2.1-15 8.1-25.2 14.8-31-51-5.7-104.6-25.5-104.6-113.5 0-25.1 8.9-45.6 23.5-61.7-2.3-5.7-10.2-28.7 2.3-59.8 0 0 19.1-6.1 62.6 23.6 18.2-4.9 37.6-7.4 56.9-7.5 19.3.1 38.7 2.6 56.9 7.5 43.5-29.7 62.5-23.6 62.5-23.6 12.6 31.1 4.7 54.1 2.3 59.8 14.6 16.1 23.4 36.6 23.4 61.7 0 88.2-53.7 107.7-104.8 113.3 8.3 7.1 15.7 21.2 15.7 42.7v63.3c0 6.7 4.5 14.4 17.3 11.9C317.9 411.2 384 332.7 384 240 384 125.1 283.7 32 160 32z"/>
+  </svg>
+  Garena • Free Fire
+</div>
+
+  <div class="counter">🌍 Visitors: <span id="count">0</span></div>
+  <footer>⚡ Powered by ʜᴀʀʀʏ ᴀsʜᴜ •</footer>
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="ffPopup">
+  <div class="popup-box">
+    <h3>🔥 ғʀᴇᴇ ғɪʀᴇ ᴘʀᴏғɪʟᴇ</h3>
+    <p>UID: <b>605458977</b></p>
+    <img src="ff.jpg" alt="Free Fire UID Screenshot">
+    <button class="close" onclick="closeFF()">Close</button>
+  </div>
+</div>
+
+<script>
+function openFF(){document.getElementById("ffPopup").style.display="flex"}
+function closeFF(){document.getElementById("ffPopup").style.display="none"}
+
+/* GLOBAL VISITOR COUNTER */
+fetch("https://api.countapi.xyz/create?namespace=harry-links&key=visits&value=1")
+.then(()=>fetch("https://api.countapi.xyz/hit/harry-links/visits"))
+.then(res=>res.json())
+.then(d=>document.getElementById("count").innerText=d.value);
+</script>
+
+</body>
+</html>
